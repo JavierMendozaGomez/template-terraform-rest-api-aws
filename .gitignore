@@ -1,0 +1,9 @@
+node_modules
+dist
+
+# Compiled files
+infrastructure/terraform/*.tfstate
+infrastructure/terraform/*.tfstate.backup
+*.tfstate.lock.info
+
+.terraform/
