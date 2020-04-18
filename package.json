@@ -6,6 +6,11 @@
   "author": "Javier Mendoza",
   "license": "MIT",
   "engines" : { "node" : ">=12" },
+  "scripts": {
+    "build:dist": "rm -rf ./dist node_modules && yarn install --check-files && tsc && yarn test && npm prune --production && mv ./node_modules ./dist/. && cd dist && ( apk add zip || echo 'Not Alpine. Not installing ZIP' ) && zip -rq lambda-payload.zip *",
+    "test": "echo without unit tests",
+    "test:integration": "echo without integration tests"
+  },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.50",
     "typescript": "^3.8.3"

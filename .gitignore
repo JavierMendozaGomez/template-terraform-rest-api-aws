@@ -7,3 +7,4 @@ infrastructure/terraform/*.tfstate.backup
 *.tfstate.lock.info
 
 .terraform/
+.DS_Store
