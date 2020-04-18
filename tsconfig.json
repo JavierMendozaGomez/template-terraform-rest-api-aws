@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "allowUnreachableCode": false,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "lib": [
+        "es6",
+        "dom",
+        "esnext"
+      ],
+      "module": "commonjs",
+      "target": "es2015",
+      "moduleResolution": "node",
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "preserveConstEnums": true,
+      "pretty": true,
+      "sourceMap": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "downlevelIteration": true,
+      "allowJs": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "baseUrl": "./",
+      "outDir": "dist",
+      "declaration": true
+    },
+    "include": [
+      "src/**/*",
+      "tests"
+    ],
+    "exclude": [
+      "**/dist/**/*",
+      "**/__mocks__",
+      "**/__snapshots__",
+      "node_modules",
+      "commitlint.config.js",
+      "infrastructure/**/*"
+    ]
+  }

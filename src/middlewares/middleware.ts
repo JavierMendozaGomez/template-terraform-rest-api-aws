@@ -1,0 +1,1 @@
+export const middy = 'MOCKED_TEXT'
